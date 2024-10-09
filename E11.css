@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: lightpink;
+    grid-area: head;
+}
+
+aside {
+    background-color: palevioletred;
+    grid-area: aside;
+}
+
+main {
+    background-color: white;
+    grid-area: main;
+}
+
+footer {
+    background-color: mediumpurple;
+    grid-area: pie;
+}
+
+.contenedor {
+    display: grid;
+    height: 100vh;
+
+    grid-template-areas:"head  head head"
+                        "izq main dere"
+                        "pie pie pie";
+    
+     grid-template-rows: 1fr 6fr 1fr;                    
+    grid-template-columns: 1fr 6fr 1fr ;
+   
+
+
+}
+
+header,
+main,
+footer,
+aside, nav {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    background-color: purple;
+    color: white;
+    grid-area: nav;
+}
+.izq {
+    grid-area: izq;
+}
+.dere {
+    grid-area: dere;
+}

@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+header {
+    background-color: lightpink;
+    grid-area: header;
+   
+
+}
+
+main {
+    background-color: white;
+    grid-area: main;
+    
+   
+}
+
+footer {
+    background-color: mediumpurple;
+    grid-area: footer;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "main    main  main "
+        "footer footer footer";
+   grid-template-columns:  1fr 1fr 1fr;
+   grid-template-rows: 1fr 5fr 1fr;
+   gap: 10px;
+   height: 100vh;
+}
+header, main, footer {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: lightpink;
+    grid-area: head;
+}
+
+aside {
+    background-color: palevioletred;
+    grid-area: aside;
+}
+
+main {
+    background-color: white;
+    grid-area: main;
+}
+
+footer {
+    background-color: mediumpurple;
+    grid-area: pie;
+}
+
+.contenedor {
+    display: grid;
+    height: 100vh;
+
+    grid-template-areas:"head head"
+                        "aside main"
+                        "pie pie";
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 6fr 1fr;
+
+
+}
+
+header,
+main,
+footer,
+aside {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

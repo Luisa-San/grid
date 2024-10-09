@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+}
+
+nav {
+    background-color: purple;
+    color: white;
+}
+
+
+header {
+    background-color: lightpink;
+}
+
+main {
+    background-color: white;
+}
+
+footer {
+    background-color: mediumpurple;
+}
+
+.contenedor {
+    display: grid;
+    height: 100vh;
+   grid-template-rows: 2fr 1fr 8fr 2fr;
+
+   
+}
+
+header, main, footer, nav {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
